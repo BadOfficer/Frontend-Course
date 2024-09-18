@@ -4,6 +4,226 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Flexbox layout (Layout #1)</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		/>
 	</head>
-	<body></body>
+	<body>
+		<header class="header">
+			<div class="header__stroke"></div>
+			<div class="logo">
+				<h1>Leather Luxe</h1>
+				<span>Crafting Quality, Defining Style</span>
+			</div>
+			<div class="search" id="search">
+				<input
+					type="text"
+					class="inside-effect"
+					name="search"
+					placeholder="Search..."
+				/>
+				<button class="outside-effect"><i class="fa fa-search"></i></button>
+			</div>
+			<button id="toggle-navbar-btn" class="outside-effect header__navbar-btn">
+				<span></span>
+			</button>
+		</header>
+
+		<nav class="navbar" id="navbar">
+			<ul>
+				<li class="navbar__item"><a href="#">Home</a></li>
+				<li class="navbar__item"><a href="#">Catalog</a></li>
+				<li class="navbar__item"><a href="#">Contacts</a></li>
+				<li class="navbar__item"><a href="#">Reviews</a></li>
+				<li class="navbar__item"><a href="#">Delivery</a></li>
+			</ul>
+		</nav>
+		<main class="main">
+			<aside class="main__sidebar" id="left-sidebar">
+				<div class="close-btn_wrapper">
+					<button class="close-btn outside-effect">X</button>
+				</div>
+				<h2>Categories</h2>
+				<ul>
+					<li class="main__sidebar-item active">
+						<a href="#wallets"><i class="fa-solid fa-wallet"></i> Wallets</a>
+					</li>
+					<li class="main__sidebar-item">
+						<a href="#bags"><i class="fa fa-briefcase"></i> Bags</a>
+					</li>
+					<li class="main__sidebar-item">
+						<a href="#belts"><i class="fas fa-grip-lines"></i> Belts</a>
+					</li>
+					<li class="main__sidebar-item">
+						<a href="#bracelets"><i class="fas fa-link"></i> Bracelets</a>
+					</li>
+					<li class="main__sidebar-item">
+						<a href="#key_holders"
+							><i class="fa-solid fa-key"></i> Key Holders</a
+						>
+					</li>
+				</ul>
+			</aside>
+			<section class="main__content">
+				<div class="main__toggle-btns">
+					<button class="outside-effect" id="open-category-btn">
+						<i class="fa-solid fa-bars"></i> Categories
+					</button>
+					<button class="outside-effect" id="open-socials-btn">
+						<i class="fa-solid fa-share-from-square"></i> Socials
+					</button>
+				</div>
+				<article class="main__catalog">
+					<h2>Our Products</h2>
+
+					<article class="main__card" id="wallets">
+						<div class="main__card-preview">
+							<img src="assets/wallets.jpg" alt="wallets preview" />
+							<h3>Wallets</h3>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+							porro laudantium repellendus ducimus libero exercitationem
+							laboriosam reiciendis excepturi, iusto explicabo maxime officia
+							repudiandae expedita impedit quidem numquam, rerum tempore nemo.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+							molestiae ab magnam architecto consequatur eaque eveniet et
+							praesentium perferendis dolor a tempore, ducimus nobis assumenda
+							voluptate similique temporibus, vel facilis! Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Dolor nobis quia quaerat unde
+							itaque, tempora asperiores cumque veritatis ut placeat neque
+							obcaecati dolorem optio illo sequi natus rerum ab? Delectus!
+						</p>
+						<div class="main__card-btn_wrapper">
+							<button class="main__card-btn outside-effect">Details</button>
+						</div>
+					</article>
+					<article class="main__card" id="bags">
+						<div class="main__card-preview">
+							<img src="assets/bags.jpg" alt="bags preview" />
+							<h3>Bags</h3>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+							porro laudantium repellendus ducimus libero exercitationem
+							laboriosam reiciendis excepturi, iusto explicabo maxime officia
+							repudiandae expedita impedit quidem numquam, rerum tempore nemo.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+							molestiae ab magnam architecto consequatur eaque eveniet et
+							praesentium perferendis dolor a tempore, ducimus nobis assumenda
+							voluptate similique temporibus, vel facilis! Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Dolor nobis quia quaerat unde
+							itaque, tempora asperiores cumque veritatis ut placeat neque
+							obcaecati dolorem optio illo sequi natus rerum ab? Delectus!
+						</p>
+						<div class="main__card-btn_wrapper">
+							<button class="main__card-btn outside-effect">Details</button>
+						</div>
+					</article>
+					<article class="main__card" id="belts">
+						<div class="main__card-preview">
+							<img src="assets/belts.jpg" alt="belts preview" />
+							<h3>Belts</h3>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+							porro laudantium repellendus ducimus libero exercitationem
+							laboriosam reiciendis excepturi, iusto explicabo maxime officia
+							repudiandae expedita impedit quidem numquam, rerum tempore nemo.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+							molestiae ab magnam architecto consequatur eaque eveniet et
+							praesentium perferendis dolor a tempore, ducimus nobis assumenda
+							voluptate similique temporibus, vel facilis! Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Dolor nobis quia quaerat unde
+							itaque, tempora asperiores cumque veritatis ut placeat neque
+							obcaecati dolorem optio illo sequi natus rerum ab? Delectus!
+						</p>
+						<div class="main__card-btn_wrapper">
+							<button class="main__card-btn outside-effect">Details</button>
+						</div>
+					</article>
+					<article class="main__card" id="bracelets">
+						<div class="main__card-preview">
+							<img src="assets/bracelets.jpg" alt="bracelets preview" />
+							<h3>Bracelets</h3>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+							porro laudantium repellendus ducimus libero exercitationem
+							laboriosam reiciendis excepturi, iusto explicabo maxime officia
+							repudiandae expedita impedit quidem numquam, rerum tempore nemo.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+							molestiae ab magnam architecto consequatur eaque eveniet et
+							praesentium perferendis dolor a tempore, ducimus nobis assumenda
+							voluptate similique temporibus, vel facilis! Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Dolor nobis quia quaerat unde
+							itaque, tempora asperiores cumque veritatis ut placeat neque
+							obcaecati dolorem optio illo sequi natus rerum ab? Delectus!
+						</p>
+						<div class="main__card-btn_wrapper">
+							<button class="main__card-btn outside-effect">Details</button>
+						</div>
+					</article>
+					<article class="main__card" id="key_holders">
+						<div class="main__card-preview">
+							<img src="assets/key_holders.jpg" alt="key holders preview" />
+							<h3>Key Holders</h3>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+							porro laudantium repellendus ducimus libero exercitationem
+							laboriosam reiciendis excepturi, iusto explicabo maxime officia
+							repudiandae expedita impedit quidem numquam, rerum tempore nemo.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+							molestiae ab magnam architecto consequatur eaque eveniet et
+							praesentium perferendis dolor a tempore, ducimus nobis assumenda
+							voluptate similique temporibus, vel facilis! Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Dolor nobis quia quaerat unde
+							itaque, tempora asperiores cumque veritatis ut placeat neque
+							obcaecati dolorem optio illo sequi natus rerum ab? Delectus!
+						</p>
+						<div class="main__card-btn_wrapper">
+							<button class="main__card-btn outside-effect">Details</button>
+						</div>
+					</article>
+				</article>
+			</section>
+			<aside class="main__sidebar" id="right-sidebar">
+				<div class="close-btn_wrapper">
+					<button class="close-btn outside-effect">X</button>
+				</div>
+				<h2>Our Socials</h2>
+				<ul>
+					<li class="main__sidebar-social-item">
+						<a href="#"
+							><span class="inside-effect"
+								><i class="fa-brands fa-instagram"></i
+							></span>
+							Instagram</a
+						>
+					</li>
+					<li class="main__sidebar-social-item">
+						<a href="#"
+							><span class="inside-effect"
+								><i class="fa-brands fa-telegram"></i
+							></span>
+							Telegram</a
+						>
+					</li>
+					<li class="main__sidebar-social-item">
+						<a href="#"
+							><span class="inside-effect"
+								><i class="fa-brands fa-x-twitter"></i
+							></span>
+							Twitter</a
+						>
+					</li>
+				</ul>
+			</aside>
+		</main>
+
+		<script src="script.js" defer></script>
+	</body>
 </html>
